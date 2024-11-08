@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+        .register-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        .register-container h2 {
+            margin-bottom: 20px;
+        }
+        .form-input,
+        .register-button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px auto; /* Centers items in the container */
+            display: block;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+        .form-input {
+            border: 1px solid #ccc;
+        }
+        .register-button {
+            background-color: #8b3ab1;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .register-button:hover {
+            background-color: #6c0bad;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form action="/register" method="POST">
+            <input type="text" name="firstName" class="form-input" placeholder="First Name" required>
+            <input type="text" name="middleName" class="form-input" placeholder="Middle Name">
+            <input type="text" name="lastName" class="form-input" placeholder="Last Name" required>
+            <input type="number" name="age" class="form-input" placeholder="Age" required>
+            <input type="text" name="school" class="form-input" placeholder="School">
+            <input type="text" name="occupation" class="form-input" placeholder="Occupation">
+            <input type="email" name="email" class="form-input" placeholder="Email Address" required>
+            <input type="password" name="password" class="form-input" placeholder="Password" required>
+            <input type="password" name="confirmPassword" class="form-input" placeholder="Confirm Password" required>
+            <button type="submit" class="register-button">Register</button>
+        </form>
+    </div>
+</body>
+</html>
