@@ -1,0 +1,133 @@
+:root{
+  --default-bg: #0d1117;
+  --tp-border-line: rgba(238, 228, 228, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #4493f8;
+}
+
+.sec {
+  min-height: 100vh;
+  padding-top: 28px;
+  background-color: var(--default-bg);
+  color: white;
+  width: 100%;
+}
+
+.flex-only {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-cen-top {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-cen {
+  justify-content: center;
+  align-items: center;
+}
+.flex-left{
+  justify-content: flex-start;
+  align-items: start;
+}
+.space-out {
+  justify-content: space-between;
+  width: 100%;
+}
+.full-height {
+  height: 100%;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.mrg-block {
+  margin-block: 10px;
+}
+
+.cont-box {
+  min-width: 290px;
+  
+  border: .8px solid rgba(238, 228, 228, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 15px;
+}
+.cont-box:nth-child(2) {
+  background-color: rgba(238, 228, 228, 0.05);
+}
+
+.cont-box:nth-child(3) a:hover {
+  text-decoration: underline;
+}
+
+
+.mrg-block:nth-last-child(1){
+  margin-top: 4.5%;
+}
+.mrg-block:nth-last-child(1) a{
+  margin-inline: 10px;
+  color: #9198a1;
+  font-size: 12px;
+}
+.mrg-block:nth-last-child(1) a:hover{
+  color: #4493f8;
+  text-decoration: underline;
+}
+
+.top-header {
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+.max-box, .max-box input {
+  width: 100%;
+}
+
+.sign-btn {
+  background-color: green;
+  border: none;
+  padding-block: 9px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 400;
+}
+.sign-btn:hover {
+  background-color: rgba(0, 128, 0, 0.9);
+}
+
+.input-field {
+  background-color: transparent;
+  border: .5px solid var(--tp-border-line);
+  padding-block: 6px;
+  border-radius: 5px;
+}
+
+.max-box input {
+  margin-block: 7px;
+}
