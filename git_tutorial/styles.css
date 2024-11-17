@@ -1,4 +1,104 @@
-console.log("index")
+/* Background color */
+body {
+  background-color: rgba(15, 14, 14, 0.9);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
 
-console.log("version 1")
+.top_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* aling items vertically */
+  padding: 15px 20px;
+}
 
+/* logo styling */
+.logo h1 a {
+  margin: 0;
+  font-size: 0.6em;
+  color: white;
+}
+
+.logo h1 a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 a i {
+  margin-left: 5px;  
+}
+
+
+.profile {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  padding: 1px 3px;
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1em;
+  width: 40px; 
+  height: 40px; 
+  text-align: center; 
+}
+
+
+
+.inner-middle-part {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#text-field {
+  width: 600px;
+  height: 40px;
+  border-radius: 35px;
+  background-color: rgb(96, 92, 92);
+  border: none;
+  color: white;
+  padding-left: 80px;
+}
+
+::placeholder {
+  color: white;
+}
+
+
+#icn1 {
+  position: relative;
+  left: 3rem;
+}
+
+#icn2 {
+  padding: 4px 9px;
+  border-radius: 50px;
+  background-color: rgb(197, 193, 193);
+  position: relative;
+  left: -4rem;
+}
+
+.chat-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+.chat-btn button{
+  margin: 10px;
+  border: solid 0.5px gray;
+  padding: 10px 15px;
+  border-radius: 35px;
+  background-color: rgba(50, 48, 48, 0.9);
+  color: rgb(199, 194, 194);
+}
+
+footer {
+  text-align: center;
+  margin-top: 250px;
+}
