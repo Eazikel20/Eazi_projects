@@ -6,13 +6,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#000000">
   <meta name="description" content="Do much more with Alat. Choose how and where you spend your money, save alone or with friends, take a loan to buy new devices and much more.">
-  <title>Alat</title>
+  <title>Alat Login Page</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-  <div class="">
+  <div class="Login-container">
+    <!--Left section with Background-->
+    <div class="left-side">
+      <img height="600px" src="./imgg/wema-alat.png" alt="phone login" class="Background-image">
+      <div class="contact-info">
+        <h2>Talk to Us</h2>
+        <p>We are happy to assist</p>
+        <p>
+          <a href="mailto:help@alat.ng" class="contact-link">
+            <i class="fas fa-envelope"></i> help@alat.ng
+          </a>
+        </p>
+        <p>
+          <a href="tel:070022552528" class="contact-link">
+            <i class="fas fa-phone"></i> 070022552528
+          </a>
+        </p>
+        <div class="social-icons">
+          <a href="#" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
+    <!--Right section with form-->
+    <div class="right-side">
+      <div class="form-container">
+        <h2>Welcome back</h2>
+        <form action="#">
+          <label for="email">Email Address/Username</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="password">Password</label>
+          <div class="password-container">
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <span class="toggle-password">
+              <i class="fas fa-eye-slash"></i>
+            </span>
+          </div>
+
+          <a href="#" class="forgot-password">Forgot password</a>
+          <button type="submit" class="login-button">Log in</button>
+        </form>
+        <p class="signup-text">
+          Don't have an account? <a href="#">Sign up</a>
+        </p>
+      </div>
+    </div>
   </div>
-  
 </body>
 </html>
